@@ -18,7 +18,7 @@ const AddUser = (props) => {
       });
       return;
     }
-    if (+enteredAge <= 0 || !isNaN(+enteredAge)) {
+    if (+enteredAge <= 0) {
       setError({
         title: "Invalid age",
         message: "Please enter a valid age (age > 0)",
