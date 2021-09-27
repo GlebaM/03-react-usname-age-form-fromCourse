@@ -28,6 +28,7 @@ const ModalOverlay = (props) => {
 const ErrorModal = (props) => {
   const backdrop = document.querySelector("#backdrop-root");
   const modal = document.querySelector("#overlay-root");
+
   return (
     <Fragment>
       {ReactDOM.createPortal(
