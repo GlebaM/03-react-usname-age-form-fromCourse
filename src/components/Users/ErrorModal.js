@@ -1,7 +1,5 @@
 import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
-
-import Card from "../UI/Card";
 import classes from "./ErrorModal.module.css";
 import Button from "../UI/Button";
 
@@ -11,7 +9,7 @@ const Backdrop = (props) => {
 
 const ModalOverlay = (props) => {
   return (
-    <Card className={classes.modal}>
+    <div className={classes.modal}>
       <header className={classes.header}>
         <h2>{props.title}</h2>
       </header>
@@ -21,7 +19,7 @@ const ModalOverlay = (props) => {
       <footer className={classes.actions}>
         <Button onClick={props.onConfirm}>Close</Button>
       </footer>
-    </Card>
+    </div>
   );
 };
 

@@ -10,9 +10,13 @@
 
 .modal {
   position: fixed;
-  top: 30vh;
-  left: 10%;
-  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  background: linear-gradient(180deg, #4f005f, #4f005f 25%, white 25%, white);
+  border-radius: 10px;
+  max-width: 40rem;
+  width: 90%;
   z-index: 100;
   overflow: hidden;
 }
@@ -35,11 +39,4 @@
   padding: 1rem;
   display: flex;
   justify-content: flex-end;
-}
-
-@media (min-width: 768px) {
-  .modal {
-    left: calc(50% - 20rem);
-    width: 40rem;
-  }
 }
